@@ -25,7 +25,7 @@ function initGame() {
     boxes.forEach((box, index) => {
         box.innerText = "";
         boxes[index].style.pointerEvents = "all";
-        //one more thing is missing, initialise box with css properties again
+        //(remove  added green boxes initialise box with css properties again 
         box.classList = `box box${index+1}`;
     });
     newGameBtn.classList.remove("active"); //initially no new game button is seen
@@ -115,4 +115,5 @@ boxes.forEach((box, index) => { //here index is chosen box index
 
 newGameBtn.addEventListener("click",  () => {
     initGame();
-});
+}
+);
